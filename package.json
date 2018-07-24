@@ -8,6 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run shirinAppAngular6:server",
+    "server:ssr": "node dist/server",
     "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
