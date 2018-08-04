@@ -1,0 +1,20 @@
+.mainLogo { 
+    margin: 0 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #5A4C28;
+}
+
+.navActive{
+    background-color: #A77E19;
+}
+
+.navActive > a{
+    color: white !important;
+}
+
+.navbar {
+    padding: 0;
+}

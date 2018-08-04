@@ -1,0 +1,248 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h4 {
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  background: url('/assets/pattern.jpg') repeat;
+  background-size: 200px;    
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.page-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cta {
+  background-color: rgba(167,126,25,0.5);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.service-p {
+  margin-bottom: 0.5rem !important;
+}
+
+.btn-primary {
+  margin: 0.5rem;
+  color: #fff;
+  background-color: #5E0674;
+  border-color: #5E0674;
+}
+
+.bg-image {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+}
+
+.bg-image.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), to(#A77E19));
+	background-image: linear-gradient(to bottom, #f8f9fa 0%, #A77E19 100%);
+	opacity: 0.7;
+}
+
+.hero-area {
+	position:relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#home.hero-area {
+	height:calc(100vh - 80px);
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.home-wrapper {
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	left:0;
+	right:0;
+}
+
+.form-wrapper {
+  background-color: rgba(167,126,25,0.5);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.contact-form:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.contact-form .input {
+	margin-bottom:20px;
+}
+
+.contact-form textarea.input {
+	height:200px;
+}
+
+.contact-details li  {
+	margin-bottom:20px;
+}
+
+.contact-details li i {
+	color: #A77E19;
+	margin-right: 15px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.section {
+	position:relative;
+}
+
+.section-hr {
+	margin-top:80px;
+	margin-bottom:80px;
+}
+
+.section-header {
+	margin-bottom:40px;
+}
+
+.main-button {
+	position:relative;
+	display:inline-block;
+	padding:10px 30px;
+	background-color: #A77E19;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button:hover , .main-button:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: goldenrod;
+  border-color: goldenrod !important;
+}
+
+.main-button.icon-button:after {
+	position:absolute;
+	width: 30px;
+	right: 15px;
+	text-align:center;
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button.icon-button:hover:after , .main-button.icon-button:focus:after {
+	opacity:1;
+}
+
+button:disabled, button:hover:disabled {
+	background: #efefef;
+	color: gray;
+	border-color: #efefef !important;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #000;
+border-radius:4px;
+background: transparent;
+  padding-left: 15px;
+padding-right: 15px;
+-webkit-transition:0.2s border-color;
+transition:0.2s border-color;
+}
+
+textarea {
+  padding: 10px 15px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
+border-color:#A77E19;
+}
+
+@media only screen and (max-width: 767px) {
+	/*-- Hero area --*/
+	.hero-area h1 {
+		font-size:30px;
+	}
+
+	/*-- Pagination --*/
+	.post-pagination .pages {
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+  .section-header h2 {
+		font-size:24px;
+  }
+  
+	.contact-form  {
+		margin-bottom:40px;
+	}
+
+	.contact-form button {
+		float:none !important;
+	}
+}

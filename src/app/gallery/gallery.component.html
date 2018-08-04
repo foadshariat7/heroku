@@ -1,3 +1,15 @@
-<p>
-  gallery works!
-</p>
+<div class="gallery-back">
+    <div *ngFor="let w of wholeAlbum; let i = index">
+      <div class="album-title" (click)="addStyle($event)">
+        <p>{{albumNames[i]}}</p>
+        <hr class="title-divider">
+      </div>
+      <div class="albums">
+        <a class="image-anchor" *ngFor="let x of w" data-facebook-share-url="" data-twitter-share-url="" data-googleplus-share-url=""
+          href="{{x.src}}">
+          <img class="album-images" src="{{x.thumbnail}}" />
+        </a>
+      </div>
+    </div>
+  </div>
+  

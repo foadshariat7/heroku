@@ -1,3 +1,93 @@
-<p>
-  home works!
-</p>
+<!-- Header -->
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <img style="width: 11%;" src="/assets/logo.png" alt="Mani site Logo">
+      <h1 class="welcomeTitle mx-auto my-0">{{hpFirst['hpwelcome']}}</h1>
+      <p class="welcomePar">{{hpFirst['hpwpar1']}}</p>
+      <p class="welcomePar" style="margin-top: -0.75em;">{{hpFirst['hpwpar2']}}</p>
+      <p class="welcomePar" style="margin-top: -0.5em;">{{hpFirst['hpwpar3']}}</p>
+      <a [routerLink]="['/about']" class="btn btn-primary">Learn more about us</a>
+      <a [routerLink]="['/contact']" class="btn btn-primary">Contact us</a>
+    </div>
+  </div>
+</header>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+  <div class="container">
+
+    <!-- Project One Row -->
+    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="{{ hpServices['service1']?.imgUrl }}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-black">{{ hpServices['service1']?.title }}</h4>
+              <p class="mb-0 text-black-50">{{ hpServices['service1']?.desc }}</p>
+              <hr class="d-none d-lg-block mb-0 ml-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Two Row -->
+    <div class="row justify-content-center no-gutters">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="{{ hpServices['service2']?.imgUrl }}" alt="">
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-black">{{ hpServices['service2']?.title }}</h4>
+              <p class="mb-0 text-black-50">{{ hpServices['service2']?.desc }}</p>
+              <hr class="d-none d-lg-block mb-0 mr-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project three Row -->
+    <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="{{ hpServices['service3']?.imgUrl }}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-left">
+              <h4 class="text-black">{{ hpServices['service3']?.title }}</h4>
+              <p class="mb-0 text-black-50">{{ hpServices['service3']?.desc }}</p>
+              <hr class="d-none d-lg-block mb-0 ml-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project four Row -->
+    <div class="row justify-content-center no-gutters">
+      <div class="col-lg-6">
+        <img class="img-fluid" src="{{ hpServices['service4']?.imgUrl }}" alt="">
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-black text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+              <h4 class="text-black">{{ hpServices['service4']?.title }}</h4>
+              <p class="mb-0 text-black-50">{{ hpServices['service4']?.desc }}</p>
+              <hr class="d-none d-lg-block mb-0 mr-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

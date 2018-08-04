@@ -1,0 +1,116 @@
+.masthead {
+    position: relative;
+    font-family: 'Cookie', cursive;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 75%, #fff 100%), url("/assets/mainpage1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+.welcomeTitle {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    font-size: 6em !important;
+    margin-top: 0.5em;
+    color: #A77E19;
+}
+
+.welcomePar {
+    font-size: 3em;
+    color: #A77E19 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #A77E19;
+    border-color: white !important;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 18px 24px;
+    transition: 0.2s background-color;
+    font-size: 2em;
+}
+
+.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: goldenrod;
+    border-color: goldenrod !important;
+}
+
+.cbtn .btn-primary:active {
+    transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+    .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0;
+    }
+    .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
+    .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+#projects {
+    font-family: 'Raleway', sans-serif !important;
+    background: url('/assets/pattern.jpg') repeat;
+    background-size: 200px;  
+}
+
+.project {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.projects-section {
+    padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+    }
+}
+
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+    .projects-section .project-text hr {
+        border-color: #64a19d;
+        border-width: .25rem;
+        width: 30%;
+    }
+}

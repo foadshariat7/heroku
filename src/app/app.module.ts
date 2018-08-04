@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from '../app/angularmaterial.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule, MatSnackBarModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { SendEmailService } from './send-email.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +22,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { ServicesComponent } from './services/services.component';
 import { LinksComponent } from './links/links.component';
+
+import 'hammerjs';
+import 'web-animations-js';
 
 var firebaseConfig = {
   apiKey: "AIzaSyDg42k0N3sJEvxQVAd9ZL3yNDfSbNzB0z8",
@@ -39,16 +47,21 @@ var firebaseConfig = {
     ServicesComponent,
     LinksComponent
   ],
+  entryComponents: [],
   imports: [
+    FormsModule,
+    HttpClientModule,
     BrowserModule.withServerTransition({appId: 'shirin-app'}),
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatSnackBarModule,
     AngularMaterialModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [SendEmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

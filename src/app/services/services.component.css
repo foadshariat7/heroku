@@ -1,0 +1,62 @@
+.wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: url('/assets/pattern.jpg') repeat;
+    background-size: 200px;
+}
+
+.page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cta {
+    background-color: rgba(167,126,25,0.5);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.cta .cta-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+    border-radius: 0.5rem;
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+.section-heading {
+    text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.service-p {
+    margin-bottom: 0.5rem !important;
+}
+
+.btn-primary {
+    margin: 0.5rem;
+    color: #fff;
+    background-color: #5E0674;
+    border-color: #5E0674;
+}
